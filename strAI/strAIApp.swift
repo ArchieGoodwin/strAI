@@ -11,7 +11,8 @@ import SwiftUI
 struct strAIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let model = ContentViewModel()
+            ContentView(model: model)
         }
     }
 }

@@ -11,6 +11,14 @@
 		5D763476294480A700E49108 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D763475294480A700E49108 /* ContentView.swift */; };
 		5D763478294480A900E49108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D763477294480A900E49108 /* Assets.xcassets */; };
 		5D76347B294480A900E49108 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D76347A294480A900E49108 /* Preview Assets.xcassets */; };
+		5D763487294482E000E49108 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D763486294482E000E49108 /* Contants.swift */; };
+		5D76348D29448CB600E49108 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76348A29448CB600E49108 /* Command.swift */; };
+		5D76348E29448CB600E49108 /* OpenAIModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76348B29448CB600E49108 /* OpenAIModelType.swift */; };
+		5D76348F29448CB600E49108 /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76348C29448CB600E49108 /* OpenAI.swift */; };
+		5D76349229448CC100E49108 /* AIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76349129448CC100E49108 /* AIEndpoint.swift */; };
+		5D76349329448CC100E49108 /* AISwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76349029448CC100E49108 /* AISwift.swift */; };
+		5D76349529448D9100E49108 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D76349429448D9100E49108 /* ContentViewModel.swift */; };
+		5D7634972945C2EA00E49108 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7634962945C2EA00E49108 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		5D763475294480A700E49108 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D763477294480A900E49108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D76347A294480A900E49108 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5D763484294481EF00E49108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5D763486294482E000E49108 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		5D76348A29448CB600E49108 /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		5D76348B29448CB600E49108 /* OpenAIModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAIModelType.swift; sourceTree = "<group>"; };
+		5D76348C29448CB600E49108 /* OpenAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
+		5D76349029448CC100E49108 /* AISwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISwift.swift; sourceTree = "<group>"; };
+		5D76349129448CC100E49108 /* AIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEndpoint.swift; sourceTree = "<group>"; };
+		5D76349429448D9100E49108 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		5D7634962945C2EA00E49108 /* ShareSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,10 @@
 		5D763472294480A700E49108 /* strAI */ = {
 			isa = PBXGroup;
 			children = (
+				5D76348929448CA400E49108 /* Models */,
+				5D763485294482CD00E49108 /* Common */,
+				5D763484294481EF00E49108 /* Info.plist */,
+				5D763481294480C400E49108 /* API */,
 				5D763473294480A700E49108 /* strAIApp.swift */,
 				5D763475294480A700E49108 /* ContentView.swift */,
 				5D763477294480A900E49108 /* Assets.xcassets */,
@@ -65,6 +86,35 @@
 				5D76347A294480A900E49108 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5D763481294480C400E49108 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5D76349129448CC100E49108 /* AIEndpoint.swift */,
+				5D76349029448CC100E49108 /* AISwift.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5D763485294482CD00E49108 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5D7634962945C2EA00E49108 /* ShareSheet.swift */,
+				5D763486294482E000E49108 /* Contants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5D76348929448CA400E49108 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D76348A29448CB600E49108 /* Command.swift */,
+				5D76348C29448CB600E49108 /* OpenAI.swift */,
+				5D76348B29448CB600E49108 /* OpenAIModelType.swift */,
+				5D76349429448D9100E49108 /* ContentViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D76349329448CC100E49108 /* AISwift.swift in Sources */,
+				5D7634972945C2EA00E49108 /* ShareSheet.swift in Sources */,
+				5D76348F29448CB600E49108 /* OpenAI.swift in Sources */,
+				5D76348E29448CB600E49108 /* OpenAIModelType.swift in Sources */,
 				5D763476294480A700E49108 /* ContentView.swift in Sources */,
 				5D763474294480A700E49108 /* strAIApp.swift in Sources */,
+				5D76349529448D9100E49108 /* ContentViewModel.swift in Sources */,
+				5D76348D29448CB600E49108 /* Command.swift in Sources */,
+				5D76349229448CC100E49108 /* AIEndpoint.swift in Sources */,
+				5D763487294482E000E49108 /* Contants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +328,7 @@
 				DEVELOPMENT_TEAM = A2KE4XLMNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = strAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +358,7 @@
 				DEVELOPMENT_TEAM = A2KE4XLMNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = strAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
